@@ -1,0 +1,180 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Hanken Grotesk;
+  background-color: hsl(221, 100%, 96%);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 800px;
+}
+
+.result-card h2 {
+  color: rgb(177, 175, 175);
+  margin-bottom: 30px;
+}
+
+.result-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(to bottom,hsl(252, 100%, 67%),
+  hsl(241, 81%, 54%));
+  border-radius: 20px;
+  padding: 20px 60px 30px 60px;
+  z-index: 1;
+}
+
+.score-circle {
+  background: linear-gradient(to bottom,hsla(256, 72%, 46%, 1),
+  hsla(241, 72%, 46%, 0));
+  border-radius: 50%;
+  height: 230px;
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.score {
+  font-size: 90px;
+  font-weight: 600;
+  color: white;
+}
+
+.of {
+  color: rgb(177, 175, 175);
+  margin-top: -10px;
+}
+
+h3 {
+  color: white;
+  font-size: 30px;
+}
+
+.result-card p {
+  width: 235px;
+  color: white;
+  margin-top: -15px;
+}
+
+.summary-card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px 30px 60px;
+  background-color: white;
+  border-radius: 20px;
+  margin-left: -30px;
+}
+
+img {
+  width: 23px;
+  margin-right: 10px;
+}
+
+.summary-list span {
+  color: hsl(224, 30%, 27%);
+  font-weight: 600;
+}
+
+.summary-list p {
+  color: gray;
+}
+
+.summary-card h2 {
+  color: hsl(224, 30%, 27%);
+  margin: 20px 0px;
+}
+
+.reaction, .memory, .verbal, .visual {
+  display: flex;
+  justify-content: space-between;
+}
+
+.summary-list {
+  margin-top: 5px;
+}
+
+.summary-list div {
+  display: flex;
+}
+
+.reaction {
+  background-color: hsl(0, 100%, 96%);
+  padding: 2px 15px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.memory {
+  background-color: hsl(35, 100%, 96%);
+  padding: 2px 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.verbal {
+  background-color: hsl(165, 100%, 95%);
+  padding: 2px 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.visual {
+  background-color: hsl(234, 100%, 94%);
+  padding: 2px 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.reaction div p {
+  color: hsl(0, 100%, 67%);
+}
+
+.memory div p {
+  color: hsl(39, 100%, 56%);
+}
+
+.verbal div p {
+  color: hsl(166, 100%, 37%);
+}
+
+.visual div p {
+  color: hsl(234, 85%, 45%);
+}
+
+.continue-btn {
+  background-color: hsl(224, 30%, 27%);
+  color: white;
+  padding: 15px 0;
+  font-size: 18px;
+  border-radius: 40px;
+  margin-top: 25px;
+  border: none;
+}
+
+@media(max-width: 375px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .result-card p {
+    font-size: 20px;
+    width: 100%;
+  }
+}
+
+.attribution {
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
